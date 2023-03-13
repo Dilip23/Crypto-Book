@@ -27,6 +27,7 @@ body{
 
 .bitcoin{
   display: flex;
+  flex-wrap: wrap;
   justify-content:center;
   gap: 3rem;
   padding: 1rem;
@@ -125,10 +126,12 @@ body{
 }
 
 .details{
-  margin-left: 250px;
+  margin-left: 15%;
   margin-top: 100px;
   gap: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .coin-name{
@@ -163,7 +166,7 @@ body{
 }
 
 .coin-prices{
-  padding: 30px 100px;
+  padding: 30px 10%;
   background-color: #f3f2f2;
   text-align: center;
   border:1px transparent;

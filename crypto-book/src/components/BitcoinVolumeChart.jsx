@@ -40,6 +40,26 @@ const BitcoinVolumeChart = ({data}) => {
         width: 1,
         colors: ['transparent']
     },
+    responsive: [
+        {
+            breakpoint: 700,
+            options:{
+                chart: {
+                    height: 300,
+                    width: 400,
+                    type: 'bar',
+                    offsetX: 7,
+                    toolbar: {
+                        show: false,
+                    },
+                    zoom:{
+                        enabled: false,
+                    }
+                },
+
+            }
+        }
+    ],
 
     xaxis: {
         // categories: [...xAxis],

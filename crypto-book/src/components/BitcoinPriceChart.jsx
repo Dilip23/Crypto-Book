@@ -31,6 +31,26 @@ const BitcoinPriceChart = ({data}) => {
     stroke: {
         curve: 'smooth'
     },
+    responsive: [
+        {
+            breakpoint: 700,
+            options:{
+                chart: {
+                    height: 300,
+                    width: 400,
+                    type: 'area',
+                    offsetX: 7,
+                    toolbar: {
+                        show: false,
+                    },
+                    zoom:{
+                        enabled: false,
+                    }
+                },
+
+            }
+        }
+    ],
     fill: {
         type: "gradient",
         gradient: {
