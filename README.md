@@ -11,5 +11,5 @@ A Cryptocurrency index application built with React that uses the CoinGecko REST
 # Individual Coin Details
 ![shot-3](https://user-images.githubusercontent.com/30292638/225693006-d59d0e4a-3e6f-4b27-8d9a-4ff481ae7836.png)
 
-#Individual Coin All-time Graph
+# Individual Coin All-time Graph
 ![shot-4](https://user-images.githubusercontent.com/30292638/225693017-13403e89-b035-4ab6-9f1b-f17a8f160a49.png)
