@@ -6,23 +6,23 @@
 body{
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #17141d;
+  background-color: #111111;
   color: #ffffff;
 }
 
 .nav{
-  background-color: #17141d;
+  background-color: #111111;
   padding: 1rem 0.5rem;
   box-shadow: 0 0.2rem rgba(0,0,0,0.2);
 }
 
 
 .site-title{
-  font-size: 1.8rem;
-  font-weight:900;
+  font-size: 1.2rem;
+  font-weight:700;
   text-decoration: none;
   color: inherit;
-  margin: 20rem; 
+  margin: 10rem; 
   
 }
 
@@ -44,7 +44,7 @@ body{
   width: 600px;
   border-radius: 5px;
   padding: 0;
-  background: #17141d;
+  background: #111111;
   box-shadow: 0 0 5px 5px rgba(0,0,0,1);
 }
 
@@ -55,8 +55,8 @@ body{
 }
 .bitcoin-overview{
   text-align: center;
-  font-weight: 900;
-  font-size: 1.7rem;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .bitcoin-item p span{
@@ -141,7 +141,7 @@ body{
 }
 
 .coin-name{
-  background-color: #17141d;
+  background-color: #111111;
   display: flex;
   flex-direction: column;
   padding:100px;
@@ -174,7 +174,7 @@ body{
 
 .coin-prices{
   padding: 30px 10%;
-  background-color: #17141d;
+  background-color: #111111;
   text-align: center;
   border:1px transparent;
   border-radius: 5px;
@@ -191,7 +191,7 @@ body{
 
 
 .high-prices, .low-prices{
-  background-color: #17141d;
+  background-color: #111111;
   padding: 20px 35px;
   border:1px transparent;
   border-radius: 5px;
@@ -229,7 +229,7 @@ body{
 
 .market-data{
   padding:100px;
-  background-color: #17141d;
+  background-color: #111111;
   border:1px transparent;
   border-radius: 5px;
   font-weight: 300;
@@ -243,7 +243,7 @@ body{
 }
 
 .description{
-  background-color: #17141d;
+  background-color: #111111;
   border:1px transparent;
   border-radius: 5px;
   font-weight: 300;

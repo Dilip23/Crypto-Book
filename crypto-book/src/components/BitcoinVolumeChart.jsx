@@ -92,8 +92,9 @@ const BitcoinVolumeChart = ({data}) => {
           shadeIntensity: 0.3,
           gradientToColors:['#2DFF2D'],
           type: "vertical",
-          opacityFrom: 0.7,
-          opacityTo: 0.8,
+          opacityFrom: 0.9,
+          opacityTo: 0.6,
+          stops:[0,70,90]
         }
     },
     

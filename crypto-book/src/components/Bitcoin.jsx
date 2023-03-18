@@ -7,7 +7,7 @@ import MarketData from './MarketData';
 
 const Bitcoin = () => {
     const { response } = useAxios('coins/bitcoin/market_chart?vs_currency=usd&days=30');
-    console.log(response);
+    console.log('response ---- ',response);
 
     if(!response){
         return <div className='loading'>Loading...</div>
@@ -21,7 +21,10 @@ const Bitcoin = () => {
 
     return(
         <>
-        <h3 className='bitcoin-overview'>Overview</h3>
+
+        <h5 className='bitcoin-overview'>Bitcoin Overview</h5>
+
+        
         <div className='bitcoin'>
             
             <div className='bitcoin-item'>

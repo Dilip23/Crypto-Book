@@ -54,10 +54,10 @@ const BitcoinPriceChart = ({data}) => {
     fill: {
         type: "gradient",
         gradient: {
-            
+            gradientToColors: ['#32AA78'],
           shadeIntensity: 1,
           opacityFrom: 0.7,
-          opacityTo: 0.9,
+          opacityTo: 0,
           stops: [0,90,100]
         }
       },
