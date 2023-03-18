@@ -33,7 +33,7 @@ const Bitcoin = () => {
             </div>
             
             <div className='bitcoin-item'>
-                <p>24h Volume: <span>{finalVolume[30][1].toLocaleString(undefined,
+                <p>24h Volume: <span>${finalVolume[30][1].toLocaleString(undefined,
             {
                 minimumFractionDigits:2,
             })}</span></p>

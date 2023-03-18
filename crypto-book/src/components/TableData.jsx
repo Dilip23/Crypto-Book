@@ -13,7 +13,7 @@ const TableData = ({crypto}) => {
         <td>
         <Link className='link' to={`/coin/${crypto.id}`}>
             <div className="crypto-name">
-                <img src={crypto.image}/>
+                <img src={crypto.image} alt="Coin Logo"/>
                 <p>{crypto.name}</p>
                 <p>({crypto.symbol.toUpperCase()})</p>
             </div>
@@ -23,9 +23,9 @@ const TableData = ({crypto}) => {
             {
                 minimumFractionDigits:2,
             })}</td>
-        <td style={{color: Number(crypto.price_change_percentage_1h_in_currency).toFixed(1) > 0 ? "green" : "red"}}>{Number(crypto.price_change_percentage_1h_in_currency).toFixed(1)}%</td>
-        <td style={{color: Number(crypto.price_change_percentage_24h_in_currency).toFixed(1) > 0 ? "green" : "red"}}>{Number(crypto.price_change_percentage_24h_in_currency).toFixed(1)}%</td>
-        <td style={{color: Number(crypto.price_change_percentage_7d_in_currency).toFixed(1) > 0 ? "green" : "red"}}>{Number(crypto.price_change_percentage_7d_in_currency).toFixed(1)}%</td>
+        <td style={{color: Number(crypto.price_change_percentage_1h_in_currency).toFixed(1) > 0 ? "#2DFF2D" : "#ff0707"}}>{Number(crypto.price_change_percentage_1h_in_currency).toFixed(1)}%</td>
+        <td style={{color: Number(crypto.price_change_percentage_24h_in_currency).toFixed(1) > 0 ? "#2DFF2D" : "#ff0707"}}>{Number(crypto.price_change_percentage_24h_in_currency).toFixed(1)}%</td>
+        <td style={{color: Number(crypto.price_change_percentage_7d_in_currency).toFixed(1) > 0 ? "#2DFF2D" : "#ff0707"}}>{Number(crypto.price_change_percentage_7d_in_currency).toFixed(1)}%</td>
         <td>${crypto.total_volume.toLocaleString()}</td>
         <td>${crypto.market_cap.toLocaleString()}</td>
         <td className='sparklines'>
@@ -35,8 +35,8 @@ const TableData = ({crypto}) => {
                       crypto.sparkline_in_7d.price[
                         crypto.sparkline_in_7d.price.length - 1
                       ]
-                        ? "red"
-                        : "green"
+                        ? "#ff0707"
+                        : "#2DFF2D"
                     }/>
             </Sparklines>
         </td>

@@ -22,6 +22,19 @@ const BitcoinPriceChart = ({data}) => {
         },
         zoom:{
             enabled: false,
+        },
+        animations:{
+            enabled: true,
+            easing: 'easeinout',
+            speed: 500,
+        animateGradually: {
+            enabled: true,
+            delay: 150
+        },
+        dynamicAnimation: {
+            enabled: true,
+            speed: 350
+        }
         }
     },
     colors:['#2DFF2D'],

@@ -14,7 +14,9 @@ body{
   background-color: #111111;
   padding: 1rem 0.5rem;
   box-shadow: 0 0.2rem rgba(0,0,0,0.2);
+  
 }
+
 
 
 .site-title{
@@ -22,8 +24,17 @@ body{
   font-weight:700;
   text-decoration: none;
   color: inherit;
-  margin: 10rem; 
+  margin: 20rem; 
   
+}
+
+
+.github-logo{
+  margin-left: 48rem;
+  margin-top: 0.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
 }
 
 .bitcoin{
@@ -50,8 +61,8 @@ body{
 
 .bitcoin-item p{
   text-align:center;
-  font-weight:400;
-  font-size: 1.2rem;
+  font-weight:300;
+  font-size: 1.3rem;
 }
 .bitcoin-overview{
   text-align: center;
@@ -195,7 +206,7 @@ body{
   padding: 20px 35px;
   border:1px transparent;
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .loading{
@@ -206,15 +217,13 @@ body{
 
 .current-price{
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .current-change-perc{
   color: green;
   font-size: 25px;
-  font-weight: bold;
-  
-  
+  font-weight: 400;
   
 }
 
@@ -224,7 +233,7 @@ body{
 
 .prices-heading{
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .market-data{
@@ -232,13 +241,13 @@ body{
   background-color: #111111;
   border:1px transparent;
   border-radius: 5px;
-  font-weight: 300;
   font-size: 1.2rem;
+  font-weight: 500;
   box-shadow: 0 0 5px 5px rgba(0,0,0,1);
 }
 
 .market-data strong{
-  font-weight: 900;
+  font-weight: 300;
   font-size: 1.3rem;
 }
 
@@ -246,15 +255,15 @@ body{
   background-color: #111111;
   border:1px transparent;
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 100;
   padding: 25px;
   margin: 80px;
   text-align: center;
-  font-size: 1.2rem;
-  
+  font-size: 1.1rem;
   box-shadow: 0 0 5px 5px rgba(0,0,0,1);
 }
 
 .description a{
   color: #89c2d9;
+  /* color: #ff0707; */
 }
