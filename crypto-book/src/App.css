@@ -11,31 +11,79 @@ body{
 }
 
 .nav{
+  width: 100%;
+  padding: 0.2rem 0;
+}
+
+.container{
   background-color: #111111;
   padding: 1rem 0.5rem;
+  width: 96%;
   box-shadow: 0 0.2rem rgba(0,0,0,0.2);
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 3rem;
+  height: 3rem;
+}
+
+.search-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 70vw;
+  border: 1px solid #6d6969;
+  padding: 0 1rem;
+  border-radius: 0.2rem;
+}
+
+.search-bar-icon{
+  color: #6d6969;
+  font-size: 1rem;
+}
+
+.search-bar-input{
+  width: 100%;
+  height: 2.8rem;
+  background: transparent;
+  border-color: transparent;
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.search-bar-input:focus{
+  outline: none;
+}
+
+.search-bar-input::placeholder{
+  color: gray;
+  font-size: 1.1rem;
 }
 
 
-
-.site-title{
-  font-size: 1.2rem;
-  font-weight:700;
-  text-decoration: none;
-  color: inherit;
-  margin: 20rem; 
-  
-}
-
-
-.github-logo{
-  margin-left: 48rem;
-  margin-top: 0.2rem;
-  font-size: 1.5rem;
+nav .container button{
+  background: #fbcb2b;
+  padding: 0.8rem;
+  width: 13rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
   cursor: pointer;
-  color: white;
+  /* color: white; */
+  margin-left: -5rem;
 }
+
+nav .container .notif{
+  font-size: 1.5rem;
+}
+
 
 .bitcoin{
   display: flex;
@@ -43,7 +91,7 @@ body{
   justify-content:center;
   gap: 3rem;
   padding: 1rem;
-  margin: 3rem 10rem;
+  margin: 2rem 10rem;
 }
 
 .market{
@@ -267,3 +315,149 @@ body{
   color: #89c2d9;
   /* color: #ff0707; */
 }
+
+
+
+.design{
+    width: 200px;
+}
+
+.design .values{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.2rem -0.7rem;
+    color: gray;
+    
+}
+
+
+
+
+.meter{
+    height: 12px;
+    /* width: 500px; */
+    background: #555;
+    border-radius: 25px;
+    /* padding: 0px; */
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(165, 172, 0);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(180,147,36) 37%,
+      rgb(148,124,36) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .meter > span:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: linear-gradient(
+      -45deg, 
+      rgba(255, 255, 255, .2) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(255, 255, 255, .2) 50%, 
+      rgba(255, 255, 255, .2) 75%, 
+      transparent 75%, 
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  } 
+
+
+  .meter > span:after,
+.animate > span > span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.5) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.5) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+
+.animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+
+
+  @media (max-width: 1200px){
+    .bitcoin{
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      max-width: 500px;
+      margin: 5rem 10rem;
+      width: 100%;
+    }
+    nav .container button{
+      display: none;
+    }
+
+  }
+
+
+  @media (max-width: 600px){
+
+    .bitcoin{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 400px;
+      margin: 5rem 2rem;
+      width: 100%;
+    }
+  }

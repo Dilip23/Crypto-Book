@@ -1,15 +1,10 @@
 import { useParams } from 'react-router-dom';
 import useAxios from '../hooks/useAxios';
-
+import {formatCompactNumber} from '../utils/utils.js'
 
 const CoinDetail = () => {
     const {id} = useParams();
     const { response } = useAxios(`coins/${id}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`);
-    
-    function formatCompactNumber(number) {
-        const formatter = Intl.NumberFormat("en", { notation: "compact" });
-        return formatter.format(number);
-      }
 
 
     if(!response){
@@ -20,7 +15,7 @@ const CoinDetail = () => {
         <div>
             <div className='details'>
                 <div className='coin-name'>
-                    <img src={response.image.large} alt="image"/>
+                    <img src={response.image.large} alt="logo"/>
                     <div className='coin-title'>
                         <p>{response.id.toUpperCase()}</p>
                         <p>({response.symbol.toUpperCase()})</p>

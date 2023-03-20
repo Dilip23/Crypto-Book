@@ -14,7 +14,7 @@ const MarketData = () => {
     
     return(
         <div className="market">
-        <h1>Markets</h1>
+        {/* <h1>Markets</h1> */}
         <Coin cryptos={response}/>
         {/* {response && response.map(coin => <p>{coin.id}</p>)} */}
         </div>

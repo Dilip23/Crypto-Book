@@ -21,3 +21,19 @@ export function uniqueData(data, key){
     // console.log('final ---> ',finalData);
     return finalData;
 }
+
+
+export function formatCompactNumber(number) {
+    const formatter = Intl.NumberFormat("en", { notation: "compact" });
+    return formatter.format(number);
+  }
+
+
+export function calculatePercentage(n1, n2){
+    // Convert strings to numbers
+    const upper = parseInt(n1);
+    const lower = parseInt(n2);
+
+    const value = upper / lower;
+    return value;
+}
