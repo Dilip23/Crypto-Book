@@ -11,8 +11,11 @@ const useAxios = (param) => {
   const fetchData = async (param) => {
     try {
       setLoading(true);
-      const result = await axios(param);
+      const result = await axios(param, {crossDomain: true});
       setResponse(result.data);
+      console.log('****************');
+      console.log(param);
+      console.log(result.status);
     } catch(err) {
       setError(err);
     } finally {
